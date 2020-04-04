@@ -11,3 +11,6 @@ cloud-eureka-server7001/target/
 .idea/sonarlint/issuestore/c/
 .idea/vcs.xml
 cloud-eureka-server7001/cloud-eureka-server7001.iml
+cloud-provider-payment8001/target/classes/com/xunqi/springcloud/PaymentMain8001.class
+
+
