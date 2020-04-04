@@ -1,0 +1,13 @@
+cloud-api-commons/target
+cloud-consumer-order80/target
+cloud-consumer-order80/target
+cloud-eureka-server7001/target/
+
+.idea/sonarlint/issuestore/2/
+.idea/sonarlint/issuestore/7/
+.idea/sonarlint/issuestore/8/
+.idea/sonarlint/issuestore/a/
+.idea/sonarlint/issuestore/b/
+.idea/sonarlint/issuestore/c/
+.idea/vcs.xml
+cloud-eureka-server7001/cloud-eureka-server7001.iml
