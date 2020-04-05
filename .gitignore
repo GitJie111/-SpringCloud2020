@@ -13,6 +13,8 @@ cloud-consumerconsul-order80/cloud-consumerconsul-order80.iml
 cloud-consumerconsul-order80/target/
 cloud-providerconsul-payment8006/cloud-providerconsul-payment8006.iml
 cloud-providerconsul-payment8006/target/
+cloud-consumer-feign-order80/cloud-consumer-feign-order80.iml
+cloud-consumer-feign-order80/target/
 
 .idea/compiler.xml
 .idea/encodings.xml
