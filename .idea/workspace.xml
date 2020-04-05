@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9807c2d-cbbe-4c96-9cd9-98fb19032e7b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/xunqi/springcloud/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/xunqi/springcloud/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/target/classes/com/xunqi/springcloud/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/target/classes/com/xunqi/springcloud/controller/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-eureka-server7001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-eureka-server7001/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/xunqi/springcloud/PaymentMain8001.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/xunqi/springcloud/PaymentMain8001.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/xunqi/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/xunqi/springcloud/controller/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/com/xunqi/springcloud/PaymentMain8001.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/com/xunqi/springcloud/PaymentMain8001.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/com/xunqi/springcloud/controller/PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/com/xunqi/springcloud/controller/PaymentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8004/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8004/src/main/java/com/xunqi/springcloud/PaymentMain8004.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8004/src/main/java/com/xunqi/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8004/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +128,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderMain80">
+  <component name="RunManager" selected="Spring Boot.PaymentMain8004">
     <configuration name="EurekaMain7001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-eureka-server7001" />
       <extension name="coverage">
@@ -148,14 +142,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaMain7002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="EurekaMain7002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-eureka-server7002" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xunqi.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xunqi.springcloud.EurekaMain7002" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -201,13 +189,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PaymentMain8004" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-provider-payment8004" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xunqi.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xunqi.springcloud.PaymentMain8004" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.PaymentMain8004" />
         <item itemvalue="Spring Boot.PaymentMain8001" />
         <item itemvalue="Spring Boot.EurekaMain7001" />
         <item itemvalue="Spring Boot.OrderMain80" />
         <item itemvalue="Spring Boot.PaymentMain8002" />
-        <item itemvalue="Spring Boot.EurekaMain7002" />
       </list>
     </recent_temporary>
   </component>
@@ -219,17 +220,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@14b6e8ed" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f1253a36" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@14b6e8ed" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@9ff27cca" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@14b6e8ed" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@6f1d7599" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f1253a36" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@88d251b7" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -250,7 +246,8 @@
       <workItem from="1585913184365" duration="6755000" />
       <workItem from="1585921469314" duration="4360000" />
       <workItem from="1585991435334" duration="5040000" />
-      <workItem from="1586010047690" duration="1458000" />
+      <workItem from="1586010047690" duration="2956000" />
+      <workItem from="1586051770891" duration="1844000" />
     </task>
     <servers />
   </component>

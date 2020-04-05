@@ -25,3 +25,7 @@ Zcloud-consumer-order80/src/main/java/com/xunqi/springcloud/controller/OrderCont
 Kcloud-consumer-order80/src/main/java/com/xunqi/springcloud/OrderMain80.java,7\e\7edddc32bea23cd3cdd421d9fc27d3b38181c6fe
 N
 cloud-consumer-order80/pom.xml,c\d\cdc81ae39f1af3dd31eef9b2ea88ba55ab9753ee
+ƒ
+Scloud-provider-payment8002/src/main/java/com/xunqi/springcloud/PaymentMain8002.java,d\a\da6220e97aa117239abbaaf83d6559668315339f
+R
+"cloud-provider-payment8004/pom.xml,4\d\4d49cb9474a1167d135f15337a9b0169271c8f88
