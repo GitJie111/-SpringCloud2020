@@ -9,6 +9,10 @@ cloud-provider-payment8004/cloud-provider-payment8004.iml
 cloud-provider-payment8004/target/
 cloud-consumerzk-order80/cloud-consumerzk-order80.iml
 cloud-consumerzk-order80/target/
+cloud-consumerconsul-order80/cloud-consumerconsul-order80.iml
+cloud-consumerconsul-order80/target/
+cloud-providerconsul-payment8006/cloud-providerconsul-payment8006.iml
+cloud-providerconsul-payment8006/target/
 
 .idea/compiler.xml
 .idea/encodings.xml
