@@ -2,6 +2,7 @@ package com.xunqi.springcloud.controller;
 
 import com.xunqi.springcloud.entities.CommonResult;
 import com.xunqi.springcloud.entities.Payment;
+import com.xunqi.springcloud.lb.LoadBalancer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.Resource;
+import java.net.URI;
 import java.util.List;
 
 
@@ -33,6 +35,8 @@ public class OrderController {
     @Resource
     private DiscoveryClient discoveryClient;
 
+    @Resource
+    private LoadBalancer loadBalancer;
 
     @Autowired
     private RestTemplate restTemplate;
@@ -70,13 +74,29 @@ public class OrderController {
         }
 
         //获得指定微服务的所有实例
-        List<ServiceInstance> instances = discoveryClient.getInstances("CLOUD-ORDER-SERVER");
+        List<ServiceInstance> instances = discoveryClient.getInstances("CLOUD-PROVIDER-SERVICE");
 
         for (ServiceInstance instance : instances) {
             log.info(instance.getServiceId() + "\t" + instance.getHost() + "\t" + instance.getPort()
                     + "\t" + instance.getUri());
         }
         return this.discoveryClient;
+    }
+
+
+    @GetMapping(value = "/consumer/payment/lb")
+    public String getPaymentLB() {
+
+        List<ServiceInstance> instances = discoveryClient.getInstances("CLOUD-PROVIDER-SERVICE");
+
+        if (instances == null || instances.size() <= 0) {
+            return null;
+        }
+
+        ServiceInstance serviceInstance = loadBalancer.instance(instances);
+        URI uri = serviceInstance.getUri();
+
+        return restTemplate.getForObject(uri + "/payment/lb",String.class);
     }
 
 
