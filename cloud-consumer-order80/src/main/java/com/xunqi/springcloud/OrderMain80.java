@@ -5,12 +5,15 @@ package com.xunqi.springcloud;
  * @author: 夏沫止水
  * @create: 2020-04-03 21:56
  **/
+import com.xunqi.myrule.MySelfRule;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.ribbon.RibbonClient;
 
 @SpringBootApplication
 @EnableEurekaClient
+@RibbonClient(name = "CLOUD-PROVIDER-SERVICE",configuration = MySelfRule.class)
 public class OrderMain80 {
 
     public static void main(String[] args) {
